@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Divinemak - HomePage</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ <!--  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet"> -->
+<!--Main Css-->
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+  
+        <div class="logo">
+          <h1><a href="index.html"><span>Div</span>inemak</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="{% static 'assets/img/logo.png' %}" alt="" class="img-fluid"></a>-->
+        </div>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'shop:shop' %}">Shop</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+          <button class="menu-button">
+            <div class="menu-icon"></div>
+        </button>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header><!-- End Header -->
+
+      <!-- ======= hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+          <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active" id="slide-1">
+              <div class="carousel-container">
+                <div class="container one">
+                    <h2 class="animate__animated animate__fadeInDown">All In One Business Environment </h2>
+                    <p class="animate__animated animate__fadeInUp">electronics installation, repairs and sales of Tv spareparts, procurement, building projects and shoe manufacturing</p>
+                    <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp" style="background-color: #3ec1d5; border: #3ec1d5;">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" id="slide-2">
+              <div class="carousel-container">
+                <div class="container two">
+                    <h2 class="animate__animated animate__fadeInDown">Sales Tv Spareparts & Repair </h2>
+                    <p class="animate__animated animate__fadeInUp">We sell panel for all TV types ranging from Tcon, Inveter, Mainboard etc.</p>
+                    <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp" style="background-color: #3ec1d5; border: #3ec1d5;">Visit Shop</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" id="slide-3">
+              <div class="carousel-container">
+                <div class="container three">
+                  <h2 class="animate__animated animate__fadeInDown">Shoe manufacturing</h2>
+                  <p class="animate__animated animate__fadeInUp">We make shoes,sandals, pams for both male and female, we tighten oversized shoes, and expand undersized shoes</p>
+                  <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp" style="background-color: #3ec1d5; border: #3ec1d5;">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="nav-slider">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+
+
+          <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="false"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a> -->
+
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="clients-slider swiper" style="
+                --width: 100px;
+                --height:90px;
+                --quantity: 8;
+                ">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide" style="--position: 1"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide" style="--position: 2"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide" style="--position: 3"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide" style="--position: 4"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide" style="--position: 5"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide" style="--position: 6"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide" style="--position: 7"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide" style="--position: 8"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+            </section>
+            <!-- End Clients Section -->
+            <!-- ======= About Section ======= -->
+            <section id="about" class="about section-bg">
+                <div class="container" data-aos="fade-up">
+        
+                    <div class="row no-gutters">
+                        <div class="content col-xl-5 d-flex align-items-stretch">
+                            <div class="content">
+                                <h3>Our Story </h3>
+                                <figure>
+                                  <figcaption>
+                                    <img src="assets/img/event18.jpeg" alt="divinemak Ceo">
+                                  </figcaption>
+                                </figure>
+                                <p>Divine-Mak is a wholly owned Nigerian company, incorporated under the companies and Allied Matters Act of 1990, with RC No 962116; It was registered after 16 (sixteen) years of experience and intensive research in electrical gadget, building projects, shoe factory and procurement.</p>
+                                <p>Since its commencement of business, Divine-Mak has steadily improved service delivery and as well enhanced our operations through innovative inspirations. We are following the trends of the dynamics in the electronic and electrical service sector, while working continually to create values that satisfy our customers, through a customer oriented and target driven strategic corporate plan.</p>
+                                <p>We are in business partnership with key companies within our industries that gives us technical support to further boost our ability to give speedy services now and in the future. Our business relationship with you shall not only be official but we aim of giving your company a first class attention and a good product and service experience.</p>
+                                <a href="#contact" class="about-btn"><span>Contact us</span> <i class="bx bx-chevron-right"></i></a>
+                            </div>
+                        </div>
+                       <!-- <div class="col-xl-7 d-flex align-items-stretch">
+                            <div class="icon-boxes d-flex flex-column justify-content-center">
+                                <div class="row">
+                                  <figure>
+                                    <figcaption>
+                                      <img src="assets/img/event18.jpeg" alt="divinemak Ceo">
+                                    </figcaption>
+                                  </figure> -->
+                                    <!-- <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                        <i class="bx bx-receipt"></i>
+                                        
+                                        <h4>Estate Management</h4>
+                                        <p>our Property Management team provides a full spectrum of management services aimed at owners of all types of commercial and residential property in Nigeria.</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                        <i class="bx bx-cube-alt"></i>
+                                        
+                                        <h4>Newest Technology In Electronic Repairs</h4>
+                                        <p>An expansive variety of repair equipments for all sort of electronic device, ranging from domestic appliances to advanced gadgets.</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                                        <i class="bx bx-images"></i>
+                                        
+                                        <h4>Modern Shoe Design</h4>
+                                        <p>we are a very eclectic brand that upcycles existing shoes into new fashion and make brand new innovative shoe designs using modern technology</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                                        <i class="bx bx-shield"></i>
+                          
+                                        <h4>Building Construction</h4>
+                                        <p>we offer professional services that provides a project’s owner(s) with effective management of the project’s schedule, cost, quality, safety, scope, and function.</p>
+                                    </div> -->
+                                </div>
+                            </div><!-- End .content-->
+                        </div>
+                    </div>
+        
+                </div>
+            </section><!-- End About Section -->
+
+            <!-- ======= Services Section ======= -->
+    <div id="services" class="services-area area-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline services-head text-center">
+                <h2>Our Services</h2>
+              </div>
+            </div>
+          </div>
+          <div class="us row text-center">
+            <!--Start Left services-->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                      <i class="bi bi-briefcase"></i>
+                    </a>
+                    <h4>Expert Coder</h4>
+                    <p>
+                      will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                    </p>
+                  </div>
+                </div>
+                <!-- end about-details -->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                      <i class="bi bi-card-checklist"></i>
+                    </a>
+                    <h4>Creative Designer</h4>
+                    <p>
+                      will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                    </p>
+                  </div>
+                </div>
+                <!-- end about-details -->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <!-- end col-md-4 -->
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                      <i class="bi bi-bar-chart"></i>
+                    </a>
+                    <h4>Wordpress Developer</h4>
+                    <p>
+                      will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                    </p>
+                  </div>
+                </div>
+                <!-- end about-details -->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <!-- end col-md-4 -->
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                      <i class="bi bi-binoculars"></i>
+                    </a>
+                    <h4>Social Marketer </h4>
+                    <p>
+                      will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                    </p>
+                  </div>
+                </div>
+                <!-- end about-details -->
+              </div>
+            </div>
+            <!-- End Left services -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <!-- end col-md-4 -->
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                      <i class="bi bi-brightness-high"></i>
+                    </a>
+                    <h4>Seo Expart</h4>
+                    <p>
+                      will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                    </p>
+                  </div>
+                </div>
+                <!-- end about-details -->
+              </div>
+            </div>
+            <!-- End Left services -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <!-- end col-md-4 -->
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                      <i class="bi bi-calendar4-week"></i>
+                    </a>
+                    <h4>24/7 Support</h4>
+                    <p>
+                      will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                    </p>
+                  </div>
+                </div>
+                <!-- end about-details -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div><!-- End Services Section -->
+    <!-- ======= Suscribe Section ======= -->
+    <div class="suscribe-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+                    <div class="suscribe-text text-center">
+                        <h3 style="color: black; font-weight: bolder;">Welcome To Our Company</h3>
+                        <a class="sus-btn" href="#">Request A Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Suscribe Section -->
+
+    <!-- ======= Rviews Section ======= -->
+    <div class="reviews-area">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <img src="assets/img/about/2.jpg" alt="" class="img-fluid" width="400" height="200">
+        </div>
+        <div class="col-lg-6 work-right-text d-flex align-items-center">
+          <div class="px-5 py-5 py-lg-0">
+              <div class="content">
+                <h2>We’ve Been Around For Over 10 years In Business</h2>
+                <p style="color: #fff;">Meet Our Team Of Very Diligent Experts @DivineMak, where years of experience complement a team of very talented technical experts.</p>
+                <a href="#contact" class="ready-btn scrollto">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Rviews Section -->
+
+    <!-- ======= Suscribe Section ======= -->
+    <div class="suscribe-area" style="background: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+                    <!--<div class="suscribe-text text-center">
+                    <h3 style="color: black; font-weight: bolder;">Welcome To Our Company</h3>
+                    <a class="sus-btn" href="#">Get A quote</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div><!-- End Suscribe Section -->
+      <!-- ======= Suscribe Section ======= -->
+      <div class="suscribe-area" style="background: #fff;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+              <!--<div class="suscribe-text text-center">
+                <h3 style="color: black; font-weight: bolder;">Welcome To Our Company</h3>
+                <a class="sus-btn" href="#">Get A quote</a>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div><!-- End Suscribe Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="section-title">
+        <h2>Clients Testimonials</h2>
+        <!--<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        -->
+      </div>
+      <div id="testimonials" class="testimonials">
+        <div class="container">
+  
+          <div class="testimonials-slider swiper">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Precious E</h3>
+                  <h4>Uyo</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    DivineMak to the world, with their prompt and awesome services you just can’t stop referring them.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Chidubem</h3>
+                  <h4>Abia State</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    This company is a top-notch shoe manufacturing company. With their footwears on your feet, you’re bound to take giant strides, literally.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Joseph M</h3>
+                  <h4>Lagos</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Divine-Mak give their clients the satistaction they deserve, I don’t regret working with them on my building projects.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+          <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+    </div><!-- End Testimonials Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>write to us and our support team is 24/7  live to offer help.</p>
+          </div>
+  
+          <div class="first-row" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="first col-lg-6">
+  
+              <div class="row">
+                <div class="address col-md-12">
+                  <div class="info-box">
+                    <i class="bx bx-map"></i>
+                    <h3>Our Address</h3>
+                    <p>N03 Enen Ekpene
+                      Eket, Akwa Ibom State
+                      Nigeria</p>
+                  </div>
+                </div>
+                <div class="email-call">
+                  <div class="email col-md-6">
+                    <div class="info-box mt-4">
+                      <i class="bx bx-envelope"></i>
+                      <h3>Email Us</h3>
+                      <p>info@divinemak.com<br>support@divinemak.com</p>
+                    </div>
+                  </div>
+                  <div class="call col-md-6">
+                    <div class="info-box mt-4">
+                      <i class="bx bx-phone-call"></i>
+                      <h3>Call Us</h3>
+                      <p>+234 909 991 1664<br>+234 909 991 1665</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+  
+            </div>
+  
+            <div class="second col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                 <!--  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+  
+    </main><!-- End #main -->
+
+     <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Divinemak<span>.</span></h3>
+            <p>
+              N03 Enen Ekpene <br>
+              Eket, Akwa Ibom State<br>
+              Nigeria <br><br>
+              <strong>Phone:</strong> +234 909 991 1665<br>
+              <strong>Email:</strong> info@divinemak.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Electronic Maintenance/Repairs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">building construction management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">estate management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">shoe manufacturing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tv spareparts</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Stay on the forefront, <br> latest update on discount of all our services. <br> up for our news letter.</p>
+            <form action="" method="post">
+              <input type="email" name="email" id="email"><input type="submit" value="Subscribe" id="submit">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Divinemak</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://hitech.com/">Hi-Tech</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+
+</body>
+
+</html>
+
+<!--#3ec1d5-->
+    
+
