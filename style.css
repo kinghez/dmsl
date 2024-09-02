@@ -14,7 +14,25 @@ img {
     height: auto;
   }
 
-
+  .section-headline h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    text-transform: capitalize;
+  }
+  
+  .section-headline h2::after {
+    border: 1px solid #333;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 40%;
+  }
 /* HEADER  */
 
 #header{
@@ -54,6 +72,13 @@ img {
     margin-right: 0.5rem;
 }
 
+.navbar .fa{
+    color: #3EC1D5;
+    font-size: 48px;
+    display: none;
+    position: absolute;
+}
+
 #header a{
     text-decoration: none;
 }
@@ -67,7 +92,7 @@ img {
     font-family: sans-serif;
 }
 
-#header #navbar a:hover, #header #navbar a:focus{
+#header #navbar a:hover, #header #navbar a:active{
     color: #3EC1D5;
 }
 
@@ -957,9 +982,16 @@ carousel-inner--->slider
         left: 0;
         margin-left: 0;
     }
+
+    .navbar .fa{
+        display: block;
+        top:30px;
+        left: 90%;
+
+    }
     
     #navbar ul{
-        display: block;
+        display: none;
         position: absolute;
         top: 50%;
         right: 0;
@@ -1049,10 +1081,20 @@ carousel-inner--->slider
 /* Mobile --> TABLETS  */
 @media (max-width: 810px){
 
+    .navbar .fa{
+        display: block;
+        top:0;
+        left: 85%;
+    }
+
     .hero-container #heroCarousel .nav-slider{
         /* left: 43%; */
         bottom: 2rem;
     }
+
+    /* .section-title{
+        margin-right: 5rem;
+    } */
     .footer-top .container .row{
         max-width: 100vh;
         flex-direction: column;
