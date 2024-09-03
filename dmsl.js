@@ -2,7 +2,7 @@ let navbar = document.querySelector(".fa");
 
 let ul = document.querySelector(" #navbar ul");
 
-let non = true; 
+/* let non = true;  */
 
 function disp(event){
     let non = true;
